@@ -1,0 +1,17 @@
+[
+  {
+    "start": "examples/demo/start1.png",
+    "end": "examples/demo/end1.png",
+    "out": "examples/demo/out1.mp4"
+  },
+  {
+    "start": "examples/demo/start2.png",
+    "end": "examples/demo/end2.png",
+    "out": "examples/demo/out2.mp4"
+  },
+  {
+    "start": "examples/demo/start3.png",
+    "end": "examples/demo/end3.png",
+    "out": "examples/demo/out3.mp4"
+  }
+]

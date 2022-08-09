@@ -1,0 +1,17 @@
+[
+  {
+    "org": "examples/demo/test_span.mp4",
+    "d5": "examples/demo/test_span_re_fr5.mp4",
+    "f40": "examples/demo/test_span_re_40fps.mp4"
+  },
+  {
+    "org": "examples/demo/douxiao_1.mp4",
+    "d5": "examples/demo/douxiao_re_fr5.mp4",
+    "f40": "examples/demo/douxiao_re_40fps.mp4"
+  },
+  {
+    "org": "examples/demo/test_11.mp4",
+    "d5": "examples/demo/test_11_re_fr5.mp4",
+    "f40": "examples/demo/test_11_re_40fps.mp4"
+  }
+]
