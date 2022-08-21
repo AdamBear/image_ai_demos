@@ -1,1 +1,1 @@
-streamlit run draw_app.py --server.port 8502
+streamlit run draw_app.py
