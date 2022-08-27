@@ -5,5 +5,6 @@ Some streamlit demo apps of image process ai model, need some other private proj
 
 ## To-Do List
 - [X] copy the scripts out of the private demo project
-- [ ] add readme and requirements.txt 
+- [ ] add readme and requirements.txt
+- [ ] add dependency projects paths in one config file
  
