@@ -8,5 +8,5 @@ Some streamlit demo apps of image process ai model, need some other private proj
 - [ ] add readme and requirements.txt
 - [ ] add dependency projects paths in one config file
 - [ ] publish the hard subtitle extraction module
-- [ ] make github user readme.md 
+- [ ] make github user‘s readme.md about me and this project 
  
