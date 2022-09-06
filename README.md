@@ -6,6 +6,7 @@ Some streamlit demo apps of image process ai model, need some other private proj
 ## To-Do List
 - [X] tested github markdown todo list style.
 - [X] copy the scripts out of the private demo project
+- [X] github edit test.
 - [ ] add readme and requirements.txt
 - [ ] add dependency projects paths in one config file
 - [ ] publish the hard subtitle extraction module
