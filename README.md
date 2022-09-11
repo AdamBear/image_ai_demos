@@ -8,7 +8,7 @@ Some streamlit demo apps of image process ai model, need some other private proj
 - [X] copy the scripts out of the private demo project
 - [ ] pack and share examples image and video files 
 - [ ] add diffision model image generation demo of PaddleNlp
-- [ ] diffusion model prompt engineering 
+- [ ] diffusion model prompt engineering for mid-autumn festival.
 - [ ] add readme and requirements.txt
 - [ ] add dependency projects paths in one config file
 - [ ] publish the hard subtitle extraction module
