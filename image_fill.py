@@ -12,7 +12,6 @@ import io
 import random
 
 
-#from options.test_options import TestOptions
 import models
 import torch
 

@@ -60,16 +60,16 @@ st.header("慧抖销AI处理功能演示")
 
 base_demo, person_demo = False, False
 
-beauty_index = 0
-if action == "beauty":
-    beauty_index = 0
-elif action == "makeup":
-    beauty_index = 1
+# beauty_index = 0
+# if action == "beauty":
+#     beauty_index = 0
+# elif action == "makeup":
+#     beauty_index = 1
 
 # # 1. as sidebar menu
 with st.sidebar:
     # demo_s = st.radio("请选择演示功能分类", ("基础AI", "音频语音", "虚拟主播"))
-    demo_s = st.radio("请选择演示功能分类", ("虚拟主播", "基础AI"))
+    demo_s = st.radio("请选择演示功能分类", ("基础AI", "虚拟主播"))
 
     # with cols[1]:
     #     if st.button("秀客AI"):

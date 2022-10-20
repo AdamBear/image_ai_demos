@@ -5,4 +5,5 @@ static
 output
 checkpoints
 datasets
+*.pth
 
