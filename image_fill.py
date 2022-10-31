@@ -12,7 +12,7 @@ import io
 import random
 
 
-import models
+import image_models
 import torch
 
 from options.base_options import BaseOptions
@@ -63,7 +63,7 @@ def get_model():
 
     opt = TestOptions().parse()
 
-    model = models.create_model(opt)
+    model = image_models.create_model(opt)
     model.eval()
     return model
 

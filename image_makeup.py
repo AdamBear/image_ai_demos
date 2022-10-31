@@ -2,7 +2,7 @@ import sys
 import os
 spmt_path = "d:\\apps\\nlp\\prompt\\SpMt\\"
 sys.path.insert(0,  spmt_path)
-model_path = os.path.join(spmt_path, "models/networks/face_parsing/79999_iter.pth")
+model_path = os.path.join(spmt_path, "image_models/networks/face_parsing/79999_iter.pth")
 
 import os
 import time
@@ -14,9 +14,9 @@ from torchvision import transforms
 from torchvision.utils import save_image, make_grid
 
 from options.demo_options import DemoOptions
-from models.pix2pix_model import Pix2PixModel
-from models.networks.sync_batchnorm import DataParallelWithCallback
-from models.networks.face_parsing.parsing_model import BiSeNet
+from image_models.pix2pix_model import Pix2PixModel
+from image_models.networks.sync_batchnorm import DataParallelWithCallback
+from image_models.networks.face_parsing.parsing_model import BiSeNet
 
 opt = DemoOptions().parse()
 opt.checkpoints_dir = os.path.join(spmt_path, "checkpoints")

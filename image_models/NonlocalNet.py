@@ -6,7 +6,7 @@ import torch.nn.functional as F
 from torchvision import models as torch_models
 from utils.util import uncenter_l, vgg_preprocess
 
-from models.vgg19_gray import vgg19_gray, vgg19_gray_new
+from image_models.vgg19_gray import vgg19_gray, vgg19_gray_new
 
 
 def find_local_patch(x, patch_size):

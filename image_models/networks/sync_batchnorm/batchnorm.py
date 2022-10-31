@@ -364,7 +364,7 @@ def convert_model(module):
         >>> import torch.nn as nn
         >>> import torchvision
         >>> # m is a standard pytorch model
-        >>> m = torchvision.models.resnet18(True)
+        >>> m = torchvision.image_models.resnet18(True)
         >>> m = nn.DataParallel(m)
         >>> # after convert, m is using SyncBN
         >>> m = convert_model(m)

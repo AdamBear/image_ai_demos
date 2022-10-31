@@ -220,7 +220,7 @@ def fspecial(filter_type, *args, **kwargs):
 
 """
 # --------------------------------------------
-# degradation models
+# degradation image_models
 # --------------------------------------------
 """
 
@@ -524,7 +524,7 @@ def degradation_bsrgan(img, sf=4, lq_patchsize=72, isp_model=None):
 def degradation_bsrgan_plus(img, sf=4, shuffle_prob=0.5, use_sharp=True, lq_patchsize=64, isp_model=None):
     """
     This is an extended degradation model by combining
-    the degradation models of BSRGAN and Real-ESRGAN
+    the degradation image_models of BSRGAN and Real-ESRGAN
     ----------
     img: HXWXC, [0, 1], its size should be large than (lq_patchsizexsf)x(lq_patchsizexsf)
     sf: scale factor

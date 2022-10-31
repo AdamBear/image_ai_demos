@@ -8,7 +8,7 @@ import argparse
 import os
 from util import util
 import torch
-import models
+import image_models
 import data
 import pickle
 
@@ -19,10 +19,10 @@ class BaseOptions():
 
     def initialize(self, parser):
         # experiment specifics
-        parser.add_argument('--name', type=str, default='label2coco', help='name of the experiment. It decides where to store samples and models')
+        parser.add_argument('--name', type=str, default='label2coco', help='name of the experiment. It decides where to store samples and image_models')
 
         parser.add_argument('--gpu_ids', type=str, default='0', help='gpu ids: e.g. 0  0,1,2, 0,2. use -1 for CPU')
-        parser.add_argument('--checkpoints_dir', type=str, default='./checkpoints', help='models are saved here')
+        parser.add_argument('--checkpoints_dir', type=str, default='./checkpoints', help='image_models are saved here')
         parser.add_argument('--model', type=str, default='pix2pix', help='which model to use')
         parser.add_argument('--phase', type=str, default='train', help='train, val, test, etc')
 
@@ -73,7 +73,7 @@ class BaseOptions():
 
         # modify model-related parser options
         model_name = opt.model
-        model_option_setter = models.get_option_setter(model_name)
+        model_option_setter = image_models.get_option_setter(model_name)
         parser = model_option_setter(parser, self.isTrain)
 
         # modify dataset-related parser options

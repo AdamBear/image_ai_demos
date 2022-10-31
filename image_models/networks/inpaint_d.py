@@ -4,8 +4,8 @@ import torch.nn.functional as F
 import pdb
 import numpy as np
 from torch.nn.functional import normalize
-from models.networks.base_network import BaseNetwork
-from models.networks.utils import dis_conv
+from image_models.networks.base_network import BaseNetwork
+from image_models.networks.utils import dis_conv
 
 class DeepFillDiscriminator(BaseNetwork):
     def __init__(self, opt):

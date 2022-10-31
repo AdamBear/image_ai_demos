@@ -1,8 +1,8 @@
 import pdb
 import torch
-import models.networks as networks
+import image_models.networks as networks
 import util.util as util
-from models.create_mask import MaskCreator
+from image_models.create_mask import MaskCreator
 import random
 import numpy as np
 

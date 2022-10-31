@@ -16,7 +16,7 @@ not_local_test = os.getenv('LOCAL_TEST') == "false"
 if not_local_test:
     sys.path.insert(0, "/mnt/RobustVideoMatting/")
     save_path = "/data/video/"
-    PREDICTOR_PATH = '/mnt/FaceSwap/models/shape_predictor_68_face_landmarks.dat'
+    PREDICTOR_PATH = '/mnt/FaceSwap/image_models/shape_predictor_68_face_landmarks.dat'
     xiuke_path = "/data/video/xiuke/"
     syn_path = "/data/video/xk_syn/"
 else:

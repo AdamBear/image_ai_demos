@@ -17,9 +17,9 @@ from PIL import Image
 from tqdm import tqdm
 
 import lib.TestTransforms as transforms
-from models.ColorVidNet import ColorVidNet
-from models.FrameColor import frame_colorization
-from models.NonlocalNet import VGG19_pytorch, WarpNet
+from image_models.ColorVidNet import ColorVidNet
+from image_models.FrameColor import frame_colorization
+from image_models.NonlocalNet import VGG19_pytorch, WarpNet
 from utils.util import (batch_lab2rgb_transpose_mc, folder2vid, mkdir_if_not,
                         save_frames, tensor_lab2rgb, uncenter_l)
 from utils.util_distortion import CenterPad, Normalize, RGB2Lab, ToTensor

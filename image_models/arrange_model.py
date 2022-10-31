@@ -1,6 +1,6 @@
 import pdb
 import torch
-from models.inpaint_model import InpaintModel
+from image_models.inpaint_model import InpaintModel
 import util.util as util
 
 class ArrangeModel(InpaintModel):

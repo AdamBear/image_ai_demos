@@ -4,9 +4,9 @@ import torch.nn.functional as F
 import pdb
 import numpy as np
 from torch.nn.functional import normalize
-from models.networks.base_network import BaseNetwork
-from models.networks.utils import gen_conv, gen_deconv, dis_conv
-from models.networks.splitcam import ReduceContextAttentionP1, ReduceContextAttentionP2
+from image_models.networks.base_network import BaseNetwork
+from image_models.networks.utils import gen_conv, gen_deconv, dis_conv
+from image_models.networks.splitcam import ReduceContextAttentionP1, ReduceContextAttentionP2
 from util.util import find_class_in_module
 
 class TwostagendGenerator(BaseNetwork):
@@ -16,7 +16,7 @@ class TwostagendGenerator(BaseNetwork):
                             help="baseg")
         opt, unknown = parser.parse_known_args()
         network = find_class_in_module(opt.baseG+"generator",
-                "models.networks.inpaint_g")
+                "image_models.networks.inpaint_g")
         network.modify_commandline_options(parser, is_train)
     def get_param_list(self, stage="all"):
         if stage=="all":
@@ -27,7 +27,7 @@ class TwostagendGenerator(BaseNetwork):
     def __init__(self, opt):
         super(TwostagendGenerator, self).__init__()
         network = find_class_in_module(opt.baseG+"generator",
-                "models.networks.inpaint_g")
+                "image_models.networks.inpaint_g")
         baseg = network(opt, return_pm=True)
         self.baseg = baseg
         rate = 1
